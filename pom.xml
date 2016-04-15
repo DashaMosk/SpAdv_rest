@@ -3,7 +3,6 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>ua.epam.spadv</groupId>
     <artifactId>SpAdv</artifactId>
-    <packaging>war</packaging>
     <version>1.0-SNAPSHOT</version>
     <name>TaskThree</name>
     <url>http://maven.apache.org</url>
@@ -90,11 +89,8 @@
     <build>
         <plugins>
             <plugin>
-                <artifactId>maven-war-plugin</artifactId>
-                <version>2.4</version>
-                <configuration>
-                    <failOnMissingWebXml>false</failOnMissingWebXml>
-                </configuration>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
         </plugins>
     </build>
